@@ -1,0 +1,43 @@
+@charset "utf-8";
+/* htmlを100%にしないとheightの100%はどの100%かわからないからうまくいかなくなる */
+html {
+  height: 100%;
+  margin: 0;
+  background-color: rgba(62, 197, 221, 0.4);
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(231, 233, 139, 0.2);
+}
+
+
+/* display: flex の効果は、その直下の子要素にだけ影響する */
+ .profile-container {
+  border: solid  ;
+  border-radius: 18px;
+  width:450px ;
+
+  /* 横並び */
+ display: flex;
+
+ padding: 20px;
+
+ /* 縦並び */
+  flex-direction: column;
+ }
+.profile-footer {
+ margin-top: 20px;
+  text-align: center;
+}
+.profile-content {
+  display: flex; /* ← ここだけ横並び */
+}
+
+.profile-left{
+  margin-right:60px;
+}
